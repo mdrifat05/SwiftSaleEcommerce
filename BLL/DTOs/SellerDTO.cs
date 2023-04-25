@@ -6,11 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Models.SignUp
+namespace BLL.DTOs
 {
-    public class Seller
+    public class SellerDTO
     {
-        [Key]
         public int Id { get; set; }
         [Required]
         [StringLength(50)]
@@ -24,9 +23,9 @@ namespace DAL.Models.SignUp
         [PasswordPropertyText]
         public string Seller_Password { get; set; }
         [Required]
-        public string Seller_Address { get;set; }
+        public string Seller_Address { get; set; }
         [Required]
-        public string Seller_Phone { get;set; }
+        public string Seller_Phone { get; set; }
         public DateTime Seller_JoinDate { get; set; }
         public string Seller_Picture { get; set; }
     }
