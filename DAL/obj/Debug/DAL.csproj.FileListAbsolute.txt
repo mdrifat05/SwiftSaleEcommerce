@@ -1,0 +1,14 @@
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll.config
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.pdb
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.xml
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.initDB.resources
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
