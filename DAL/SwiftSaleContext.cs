@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using DAL.Models.Login;
 using DAL.Models.SignUp;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,8 @@ namespace DAL
         public DbSet<Seller> Sellers { get; set; }   
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get;set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Token> Tokens { get; set; }
+
     }
 }
