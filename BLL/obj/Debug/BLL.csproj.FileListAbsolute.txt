@@ -1,0 +1,14 @@
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\BLL.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\BLL.pdb
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.pdb
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll.config
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.xml
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.xml
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.dll
+D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.pdb
