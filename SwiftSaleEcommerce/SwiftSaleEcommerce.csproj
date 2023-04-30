@@ -94,6 +94,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Auth\CustomerAccess.cs" />
     <Compile Include="Auth\SellerAccess.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />

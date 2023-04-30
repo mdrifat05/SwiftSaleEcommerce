@@ -37,5 +37,9 @@ namespace DAL
         {
             return new SellerRepo();
         }
+        public static IRepo<Admin, int, bool> AdminData()
+        {
+            return new AdminRepo();
+        }
     }
 }

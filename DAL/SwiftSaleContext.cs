@@ -12,6 +12,7 @@ namespace DAL
 {
     internal class SwiftSaleContext:DbContext
     {
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Seller> Sellers { get; set; }   
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get;set; }
