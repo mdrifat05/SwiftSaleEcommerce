@@ -37,5 +37,17 @@ namespace DAL
         {
             return new SellerRepo();
         }
+        public static IRepo<DeliveryMan, int, bool> DeliveryManData()
+        {
+            return new ManageDeliveryManRepo();
+        }
+        public static IRepo<Promotion, int, bool> PromotionData()
+        {
+            return new ManagePromotionRepos();
+        }
+        public static IRepo<Search, int, bool> SearchData()
+        {
+            return new ManageSearchRepo();
+        }
     }
 }

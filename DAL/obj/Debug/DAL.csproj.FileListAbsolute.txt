@@ -12,3 +12,17 @@ D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll.config
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\DAL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.xml
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.InitDB.resources
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

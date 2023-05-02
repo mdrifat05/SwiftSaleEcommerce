@@ -12,3 +12,17 @@ D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.xm
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.dll
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\BLL.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\BLL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.dll
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.pdb
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll.config
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.xml
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.xml
+E:\10th Semester\Advanced Programming With .Net\Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CopyComplete

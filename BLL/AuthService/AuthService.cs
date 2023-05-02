@@ -18,7 +18,7 @@ namespace BLL.AuthService
             if (result)
             {
                 var token = new Token();
-                token.UserEmail = email; 
+                token.UserEmail = email;  
                 token.CreateDate = DateTime.Now;
                 token.TokenString= Guid.NewGuid().ToString();   
                 var ret = DataAccessFactory.TokenData().Create(token);
@@ -42,6 +42,19 @@ namespace BLL.AuthService
                            where u.Email == extoken.UserEmail
                            select u.Role).FirstOrDefault();
             if (IsSeller.Equals("Seller"))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool DeliveryManAccess(string tokenkey)
+        {
+            var extoken = DataAccessFactory.TokenData().Read(tokenkey);
+            var user = DataAccessFactory.UserData().Read();
+            var IsSeller = (from u in user
+                            where u.Email == extoken.UserEmail
+                            select u.Role).FirstOrDefault();
+            if (IsSeller.Equals("DeliveryMan"))
             {
                 return true;
             }

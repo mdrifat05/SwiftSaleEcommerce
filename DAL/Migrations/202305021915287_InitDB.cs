@@ -51,6 +51,65 @@
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.Customers",
+                c => new
+                    {
+                        CustId = c.Int(nullable: false, identity: true),
+                        Fname = c.String(nullable: false),
+                        Lname = c.String(nullable: false),
+                        Phone_number = c.String(nullable: false),
+                        email = c.String(nullable: false),
+                        Password = c.String(nullable: false),
+                        gender = c.String(nullable: false),
+                        Dob = c.DateTime(nullable: false),
+                        Address = c.String(nullable: false),
+                        review = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.CustId);
+            
+            CreateTable(
+                "dbo.DeliveryMen",
+                c => new
+                    {
+                        DelId = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false),
+                        Email = c.String(nullable: false),
+                        Password = c.String(nullable: false),
+                        Phone = c.String(nullable: false),
+                        Gender = c.String(),
+                        JoinDate = c.DateTime(nullable: false),
+                        Dob = c.DateTime(nullable: false),
+                        Zip_Code = c.Int(nullable: false),
+                        nid = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.DelId);
+            
+            CreateTable(
+                "dbo.Promotions",
+                c => new
+                    {
+                        prompid = c.Int(nullable: false, identity: true),
+                        name = c.String(nullable: false),
+                        description = c.String(nullable: false),
+                        start_date = c.DateTime(nullable: false),
+                        end_date = c.DateTime(nullable: false),
+                        discount_amount = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.prompid);
+            
+            CreateTable(
+                "dbo.Searches",
+                c => new
+                    {
+                        search_Id = c.Int(nullable: false, identity: true),
+                        cust_id = c.Int(nullable: false),
+                        search_text = c.String(),
+                    })
+                .PrimaryKey(t => t.search_Id)
+                .ForeignKey("dbo.Customers", t => t.cust_id, cascadeDelete: true)
+                .Index(t => t.cust_id);
+            
+            CreateTable(
                 "dbo.Tokens",
                 c => new
                     {
@@ -78,12 +137,18 @@
         
         public override void Down()
         {
+            DropForeignKey("dbo.Searches", "cust_id", "dbo.Customers");
             DropForeignKey("dbo.Products", "SellBy", "dbo.Sellers");
             DropForeignKey("dbo.Products", "C_Id", "dbo.Categories");
+            DropIndex("dbo.Searches", new[] { "cust_id" });
             DropIndex("dbo.Products", new[] { "SellBy" });
             DropIndex("dbo.Products", new[] { "C_Id" });
             DropTable("dbo.Users");
             DropTable("dbo.Tokens");
+            DropTable("dbo.Searches");
+            DropTable("dbo.Promotions");
+            DropTable("dbo.DeliveryMen");
+            DropTable("dbo.Customers");
             DropTable("dbo.Sellers");
             DropTable("dbo.Products");
             DropTable("dbo.Categories");

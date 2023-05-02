@@ -1,0 +1,94 @@
+﻿using BLL.DTOs;
+using DAL.Models;
+using DAL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace BLL.services
+{
+    public class ManagePromotionService
+    {
+        public static bool Create(ManagePromotionDTO Prompt)
+        {
+            var data = Convert(Prompt);
+            return DataAccessFactory.PromotionData().Create(data);
+
+        }
+        public static List<ManagePromotionDTO> Read()
+        {
+            var data = DataAccessFactory.PromotionData().Read();
+            return Convert(data);
+
+        }
+        public static ManagePromotionDTO Read(int id)
+        {
+            return Convert(DataAccessFactory.PromotionData().Read(id));
+        }
+
+        public static bool Update(ManagePromotionDTO prompt)
+        {
+            var data = Convert(prompt);
+            return DataAccessFactory.PromotionData().Update(data);
+
+        }
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.PromotionData().Delete(id);
+
+        }
+
+        static List<ManagePromotionDTO> Convert(List<Promotion> prompt)
+        {
+            var data = new List<ManagePromotionDTO>();
+            foreach (Promotion pro in prompt)
+            {
+                data.Add(Convert(pro));
+            }
+            return data;
+        }
+        static List<Promotion> Convert(List<ManagePromotionDTO> prompt)
+        {
+            var data = new List<Promotion>();
+            foreach (ManagePromotionDTO pro in prompt)
+            {
+                data.Add(Convert(pro));
+            }
+            return data;
+        }
+
+        static ManagePromotionDTO Convert(Promotion pro)
+        {
+            return new ManagePromotionDTO()
+            {
+
+                prompid = pro.prompid,
+                name = pro.name,
+                description = pro.description,
+                start_date = pro.start_date,
+                end_date = pro.end_date,
+                discount_amount = pro.discount_amount
+
+
+            };
+        }
+
+        static Promotion Convert(ManagePromotionDTO pro)
+        {
+            return new Promotion()
+            {
+                prompid=pro.prompid,
+                name=pro.name,
+                description=pro.description,
+                start_date = pro.start_date,
+                end_date = pro.end_date,
+                discount_amount=pro.discount_amount
+
+            };
+
+        }
+    }
+}
