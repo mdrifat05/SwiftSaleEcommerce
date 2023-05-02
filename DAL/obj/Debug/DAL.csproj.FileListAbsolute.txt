@@ -27,3 +27,9 @@ C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
 C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
 C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.addedadmindatabase.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.cart.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.transaction.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.transaction1.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.transaction2.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.uihh.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.hjk.resources

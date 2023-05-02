@@ -41,5 +41,13 @@ namespace DAL
         {
             return new AdminRepo();
         }
+        public static IRepo<Cart, int, bool> CartData()
+        {
+            return new CartRepo();
+        }
+        public static IRepo<Pay, int, bool> PayData()
+        {
+            return new PayRepo();
+        }
     }
 }
