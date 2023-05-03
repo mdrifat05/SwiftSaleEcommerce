@@ -12,3 +12,17 @@ D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.xm
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.dll
 D:\.NetLabTask\Final Project\SwiftSaleEcommerce\BLL\obj\Debug\BLL.pdb
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\BLL.dll
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\BLL.pdb
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.dll
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.dll
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\DAL.pdb
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\DAL.dll.config
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\AutoMapper.xml
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\bin\Debug\EntityFramework.xml
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\obj\Debug\BLL.dll
+D:\Spring Final Net\SwiftSaleEcommerce\BLL\obj\Debug\BLL.pdb

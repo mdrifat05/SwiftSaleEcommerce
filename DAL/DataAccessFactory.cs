@@ -37,5 +37,17 @@ namespace DAL
         {
             return new SellerRepo();
         }
+        public static IRepo<Customer, int, bool> CustomerData()
+        {
+            return new CustomerRepo();
+        }
+        public static IRepo<Order, int, bool> OrderData()
+        {
+            return new OrderRepo();
+        }
+        public static IRepo<OrderDetail, int, bool> OrderDetailData()
+        {
+            return new OrderDetailRepo();
+        }
     }
 }
