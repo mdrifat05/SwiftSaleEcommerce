@@ -29,3 +29,20 @@ D:\Spring Final Net\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
 D:\Spring Final Net\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.addmigrationCustomerAdd.resources
 D:\Spring Final Net\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.orderAdd.resources
 D:\Spring Final Net\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.orderDetailsADD.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll.config
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\DAL.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\DAL.pdb
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.xml
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.InitDB.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.addmigrationCustomerAdd.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.orderAdd.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.orderDetailsADD.resources
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
