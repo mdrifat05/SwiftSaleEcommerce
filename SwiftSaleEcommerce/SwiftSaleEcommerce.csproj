@@ -98,8 +98,14 @@
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DeliveryManController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderDetailController.cs" />
     <Compile Include="Controllers\PayController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\PromotionController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">

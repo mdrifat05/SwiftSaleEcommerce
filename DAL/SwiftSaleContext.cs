@@ -20,6 +20,11 @@ namespace DAL
         public DbSet<Pay> Pays { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Token> Tokens { get; set; }
-
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<DeliveryMan> DeliveryMans { get; set; }
+        public DbSet<Search> Searchs { get; set; }
     }
 }

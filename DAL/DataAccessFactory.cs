@@ -49,5 +49,29 @@ namespace DAL
         {
             return new PayRepo();
         }
+        public static IRepo<Customer, int, bool> CustomerData()
+        {
+            return new CustomerRepo();
+        }
+        public static IRepo<Order, int, bool> OrderData()
+        {
+            return new OrderRepo();
+        }
+        public static IRepo<OrderDetail, int, bool> OrderDetailData()
+        {
+            return new OrderDetailRepo();
+        }
+        public static IRepo<DeliveryMan, int, bool> DeliveryManData()
+        {
+            return new DeliveryManRepo();
+        }
+        public static IRepo<Promotion, int, bool> PromotionData()
+        {
+            return new PromotionRepo();
+        }
+        public static IRepo<Search, int, bool> SearchData()
+        {
+            return new SearchRepo();
+        }
     }
 }

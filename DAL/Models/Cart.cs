@@ -12,7 +12,7 @@ namespace DAL.Models
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public Product Product { get; set; }
-        //public string CustomerId { get; set; }
-        //public Customer Customer { get; set; }
+        public string customer_id { get; set; }
+        public Customer Customer { get; set; }
     }
 }
