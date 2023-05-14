@@ -94,6 +94,10 @@
     <Compile Include="Migrations\202305030536393_final.designer.cs">
       <DependentUpon>202305030536393_final.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305131643567_hi.cs" />
+    <Compile Include="Migrations\202305131643567_hi.designer.cs">
+      <DependentUpon>202305131643567_hi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
@@ -158,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305030536393_final.resx">
       <DependentUpon>202305030536393_final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305131643567_hi.resx">
+      <DependentUpon>202305131643567_hi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

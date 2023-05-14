@@ -235,3 +235,6 @@ D:\.NetLabTask\SwiftSaleEcommerce\SwiftSaleEcommerce\obj\Debug\SwiftSaleEcommerc
 D:\.NetLabTask\SwiftSaleEcommerce\SwiftSaleEcommerce\obj\Debug\SwiftSaleEcommerce.csproj.CopyComplete
 D:\.NetLabTask\SwiftSaleEcommerce\SwiftSaleEcommerce\obj\Debug\SwiftSaleEcommerce.dll
 D:\.NetLabTask\SwiftSaleEcommerce\SwiftSaleEcommerce\obj\Debug\SwiftSaleEcommerce.pdb
+C:\Users\QC\Desktop\SwiftSaleEcommerce\SwiftSaleEcommerce\bin\System.Web.Cors.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\SwiftSaleEcommerce\bin\System.Web.Http.Cors.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\SwiftSaleEcommerce\bin\System.Web.Http.Cors.xml

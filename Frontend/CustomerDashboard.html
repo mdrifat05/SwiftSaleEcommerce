@@ -6,7 +6,7 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script>
-    var Path = 'D:/.NetLabTask/SwiftSaleEcommerce/Frontend/';
+    var Path = 'C:/Users/QC/Desktop/SwiftSaleEcommerce/Frontend/';
     var app = angular.module("app", []);
     app.factory('interceptor', ['$q', '$window', function ($q, $window) {
         var interceptor = {
@@ -34,7 +34,7 @@
     }]);
 
     app.controller('CategoryCtrl', function ($scope, $window, $http) {
-        debugger;
+       
         $http({
             method: 'GET',
             url: "https://localhost:44345/api/category",
@@ -42,11 +42,11 @@
                 'Authorization': localStorage.getItem("TokenKey")
             }
         }).then(function (resp) {
-            debugger;
+       
             $scope.categories = resp.data;
-            debugger;
+        
         }, function (err) {
-            debugger;
+           
             $window.alert("Access denied");
             window.location.href = Path + 'Login.html';
         });

@@ -57,3 +57,5 @@ D:\.NetLabTask\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cac
 D:\.NetLabTask\SwiftSaleEcommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\.NetLabTask\SwiftSaleEcommerce\DAL\obj\Debug\DAL.dll
 D:\.NetLabTask\SwiftSaleEcommerce\DAL\obj\Debug\DAL.pdb
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\bin\Debug\System.Web.Cors.dll
+C:\Users\QC\Desktop\SwiftSaleEcommerce\DAL\obj\Debug\DAL.Migrations.hi.resources
