@@ -14,6 +14,7 @@ using System.Web.Http.Cors;
 namespace SwiftSaleEcommerce.Controllers
 {
     [EnableCors("*", "*", "*")]
+    //[AdminAccess]
     public class SellerController : ApiController
     {
         //[SellerAccess]

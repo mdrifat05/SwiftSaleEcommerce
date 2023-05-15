@@ -17,10 +17,12 @@ namespace BLL.DTOs
         public string Description { get; set; }
         [Required]
         public string Price { get; set; }
+        [Required]
+        public int Quantity { get; set; }
         public string Image { get; set; }
       
-        public int C_Id { get; set; }
+        public int? C_Id { get; set; }
      
-        public int SellBy { get; set; }
+        public int? SellBy { get; set; }
     }
 }

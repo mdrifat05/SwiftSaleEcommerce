@@ -14,7 +14,7 @@ namespace SwiftSaleEcommerce.Controllers
     [EnableCors("*", "*", "*")]
     public class CategoryController : ApiController
     {
-       [SellerAccess]
+       //[SellerAccess]
         [HttpGet]
         [Route("api/category")]
         public IHttpActionResult Get()

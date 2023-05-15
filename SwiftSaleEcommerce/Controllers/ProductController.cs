@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using SwiftSaleEcommerce.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Web.Services.Description;
 namespace SwiftSaleEcommerce.Controllers
 {
     [EnableCors("*", "*", "*")]
+    //[AdminAccess]
     public class ProductController : ApiController
     {
         [HttpGet]

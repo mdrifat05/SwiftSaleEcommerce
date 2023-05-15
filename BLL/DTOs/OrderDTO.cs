@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,13 @@ namespace BLL.DTOs
     public class OrderDTO
     {
         public int orderId { get; set; }
+        [Required]
         public DateTime Order_Date { get; set; }
-        public int quantity { get; set; }
-        public int price { get; set; }
+        [Required]
         public int total_price { get; set; }
         public string status { get; set; }
-        public int custId { get; set; }
-        public int DelId { get; set; }
+        public int? custId { get; set; }
+
+        public int? DelId { get; set; }
     }
 }

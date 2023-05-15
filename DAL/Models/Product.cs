@@ -20,6 +20,8 @@ namespace DAL.Models
         public string Description { get; set; }
         [Required]
         public string Price { get; set; }
+        [Required]
+        public int Quantity { get; set; }
         public string Image { get; set; }
         [ForeignKey("Category")]
         public int C_Id { get; set; }

@@ -1,4 +1,5 @@
 ﻿using BLL.AuthService;
+using SwiftSaleEcommerce.Auth;
 using SwiftSaleEcommerce.Models;
 using System;
 using System.Collections.Generic;
@@ -35,9 +36,11 @@ namespace SwiftSaleEcommerce.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
-
+        
         [HttpGet]
+        //[ALLAccess]
         [Route("api/logout")]
+
         public HttpResponseMessage Logout()
         {
             var token = Request.Headers.Authorization.ToString();

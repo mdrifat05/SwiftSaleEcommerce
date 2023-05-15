@@ -7,10 +7,11 @@
 <body class="body" ng-app="app">
   <div class="navbar">
     <a href="#" class="active">Swiftsale</a>
-    <input type="text" placeholder="Search" class="search-input">
+    <h4>Admin Dashboard</h4>
     <div class="navbar">
-      <a href="#">Sign In</a>||
-      <a href="D:/.NetLabTask/SwiftSaleEcommerce/Frontend/AddAdmin.html">Sign Up</a>||
+      <a href="D:/.NetLabTask/SwiftSaleEcommerce/Frontend/AddDeliveryMan.html">Add DeliveryMan</a>||
+      <a href="D:/.NetLabTask/SwiftSaleEcommerce/Frontend/AddSeller.html">Add Seller</a>||
+      <a href="D:/.NetLabTask/SwiftSaleEcommerce/Frontend/AddAdmin.html">Add Admin</a>||
       <!-- <a href="#">Cart</a>|| -->
      <!-- <button ng-click="logout()">Logout</button> -->
      <div ng-controller="logoutCtrl">
@@ -207,13 +208,7 @@
         $scope.numItems = $scope.data.length;
       };
       $scope.deleteAdmin = function(id) {
-        $http({
-            method: 'GET',
-            url: "https://localhost:44345/api/admin/delete/"+ id,
-            headers: {
-                'Authorization': localStorage.getItem("TokenKey")
-            }
-          }).then(function (resp) {
+    $http.post("https://localhost:44345/api/admin/delete/" + id).then(function (resp) {
       // Remove the deleted admin from the displayed data
       var index = $scope.data.findIndex(function (admin) {
         return admin.Id === id;
@@ -222,11 +217,7 @@
         $scope.data.splice(index, 1);
       }
     }, function (error) {
-      // if (!flag) {
-          flag = 1;
-          // $window.alert("Access denied");
-          // window.location.href = Path + 'Login.html';
-        // }
+      console.log(error);
     });
   };
     });
@@ -312,6 +303,7 @@
                 });
             };
         }); 
+        
   </script>
 </body>
 </html>

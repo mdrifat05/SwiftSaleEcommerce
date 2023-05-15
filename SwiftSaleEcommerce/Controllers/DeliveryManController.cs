@@ -1,4 +1,5 @@
-﻿using BLL.DTOs.SignUp;
+﻿using BLL.DTOs.Login;
+using BLL.DTOs.SignUp;
 using BLL.Services;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,16 @@ namespace SwiftSaleEcommerce.Controllers
         {
             try
             {
+                var userDTO = new UserDTO
+                {
+                    Id = obj.DelId,
+                    Name = obj.Name,
+                    Email = obj.Email,
+                    Password = obj.Password,
+                    Role = "DeliveryMan"
+                };
                 var data = DeliveryManService.Create(obj);
+                var userAdded = UserService.Add(userDTO);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Delivery Man Added Successfully", Data = obj });

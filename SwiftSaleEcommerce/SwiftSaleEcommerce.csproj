@@ -99,6 +99,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Auth\AdminAccess.cs" />
+    <Compile Include="Auth\ALLAccess.cs" />
     <Compile Include="Auth\CustomerAccess.cs" />
     <Compile Include="Auth\DeliveryManAccess.cs" />
     <Compile Include="Auth\SellerAccess.cs" />

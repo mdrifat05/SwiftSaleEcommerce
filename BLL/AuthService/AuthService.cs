@@ -34,6 +34,20 @@ namespace BLL.AuthService
             }
             return null;
         }
+
+        /*public static bool ALLAccess(string tokenkey)
+        {
+            var extoken = DataAccessFactory.TokenData().Read(tokenkey);
+            var user = DataAccessFactory.UserData().Read();
+            var IsAccess = (from u in user
+                            where u.Email == extoken.UserEmail
+                            select u.Role).FirstOrDefault();
+            if (IsAccess == "Seller" || IsAccess == "Admin" || IsAccess == "Customer" || IsAccess == "DeliveryMan")
+            {
+                return true;
+            }
+            return false;
+        }*/
         public static bool SellerAccess(string tokenkey)
         {
             var extoken = DataAccessFactory.TokenData().Read(tokenkey);
@@ -97,13 +111,17 @@ namespace BLL.AuthService
         }
         public static bool Logout(string tkey)
         {
-            var extoken = DataAccessFactory.TokenData().Read(tkey);
-            extoken.ExpiryDate = DateTime.Now;
-            if (DataAccessFactory.TokenData().Update(extoken) != null)
+            if (tkey != null)
             {
-                return true;
+                var extoken = DataAccessFactory.TokenData().Read(tkey);
+                extoken.ExpiryDate = DateTime.Now;
+                if (DataAccessFactory.TokenData().Update(extoken) != null)
+                {
+                    return true;
+                }
             }
             return false;
         }
+
     }
 }

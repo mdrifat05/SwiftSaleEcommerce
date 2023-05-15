@@ -98,6 +98,10 @@
     <Compile Include="Migrations\202305131643567_hi.designer.cs">
       <DependentUpon>202305131643567_hi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305151133270_OrdertableModified.cs" />
+    <Compile Include="Migrations\202305151133270_OrdertableModified.designer.cs">
+      <DependentUpon>202305151133270_OrdertableModified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
@@ -165,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305131643567_hi.resx">
       <DependentUpon>202305131643567_hi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305151133270_OrdertableModified.resx">
+      <DependentUpon>202305151133270_OrdertableModified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
