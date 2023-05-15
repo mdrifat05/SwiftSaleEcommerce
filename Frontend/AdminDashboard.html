@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
   <link rel="stylesheet" href="mystyle.css">
 </head>
-<body class="body" ng-app="my-app">
+<body class="body" ng-app="app">
   <div class="navbar">
     <a href="#" class="active">Swiftsale</a>
     <input type="text" placeholder="Search" class="search-input">
     <div class="navbar">
-      <a href="#">Sign In</a>
-      <a href="#">Sign Up</a>
-      <a href="#">Cart</a>
+      <a href="#">Sign In</a>||
+      <a href="D:/.NetLabTask/SwiftSaleEcommerce/Frontend/AddAdmin.html">Sign Up</a>||
+      <!-- <a href="#">Cart</a>|| -->
+     <!-- <button ng-click="logout()">Logout</button> -->
+     <div ng-controller="logoutCtrl">
+      <button ng-click="logout()">Logout</button>
+     </div>
     </div>
   </div>
   <div class="container">
     <div class="side-menu">
       <ul>
-        <li><a href="#">Profile</a></li>
+        <!-- <li><a href="#">Profile</a></li>
         <li><a href="#">Edit Profile</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="#">Logout</a></li> -->
       </ul>
     </div>
     <div class="container">
@@ -141,19 +145,75 @@
   </footer>
 
   <script>
-    var app = angular.module("my-app", []);
-    app.controller('adminCtrl', function ($scope, $http) {
-      $http.get("https://localhost:44345/api/admin").then(function (resp) {
+  var flag=0;
+  var Path = 'D:/.NetLabTask/SwiftSaleEcommerce/Frontend/';
+  var app = angular.module("app", []);
+  app.factory('interceptor', ['$q', '$window', function ($q, $window) {
+      var interceptor = {
+          request: function (config) {
+              var token = localStorage.getItem("Tokenkey");
+              config.headers.Authorization = token;
+              return config;
+          },
+          response: function (response) {
+              return response;
+          },
+          responseError: function (rejection) {
+              if (rejection.status === 401) {
+                
+                if (flag === 0) {
+                  
+                      flag = 1;
+                      $window.alert("Access denied");
+                      $window.location.href = Path + 'Login.html';
+                    }
+                    
+                  // flag = 1;
+                  //  $window.alert("Access denied");
+                  //  window.location.href = Path + 'Login.html';
+              }
+              
+              return $q.reject(rejection);
+          }
+      };
+      return interceptor;
+  }]);
+
+  app.config(['$httpProvider', function ($httpProvider) {
+      $httpProvider.interceptors.push('interceptor');
+  }]);
+    app.controller('adminCtrl', function ($scope, $http, $window) {
+      ;
+      $http({
+            method: 'GET',
+            url: "https://localhost:44345/api/admin",
+            headers: {
+                'Authorization': localStorage.getItem("TokenKey")
+            }
+          }).then(function (resp) {
+            
         $scope.data = resp.data;
       }, function (error) {
-        console.log(error);
+          // if (!flag) {
+            
+          flag = 1;
+          
+          // $window.alert("Access denied");
+          // window.location.href = Path + 'Login.html';
+        // }
       });
       $scope.numItems = 2;
       $scope.toggleDisplay = function() {
         $scope.numItems = $scope.data.length;
       };
       $scope.deleteAdmin = function(id) {
-    $http.post("https://localhost:44345/api/admin/delete/" + id).then(function (resp) {
+        $http({
+            method: 'GET',
+            url: "https://localhost:44345/api/admin/delete/"+ id,
+            headers: {
+                'Authorization': localStorage.getItem("TokenKey")
+            }
+          }).then(function (resp) {
       // Remove the deleted admin from the displayed data
       var index = $scope.data.findIndex(function (admin) {
         return admin.Id === id;
@@ -162,43 +222,96 @@
         $scope.data.splice(index, 1);
       }
     }, function (error) {
-      console.log(error);
+      // if (!flag) {
+          flag = 1;
+          // $window.alert("Access denied");
+          // window.location.href = Path + 'Login.html';
+        // }
     });
   };
     });
-    app.controller('sellerCtrl', function ($scope, $http) {
-    $http.get("https://localhost:44345/api/seller").then(function (resp) {
+    app.controller('sellerCtrl', function ($scope, $http, $window) {
+      $http({
+            method: 'GET',
+            url: "https://localhost:44345/api/seller",
+            headers: {
+                'Authorization': localStorage.getItem("TokenKey")
+            }
+          }).then(function (resp) {
       $scope.data = resp.data;
     }, function (error) {
-      console.log(error);
+      // if (!flag) {
+          flag = 1;
+          // $window.alert("Access denied");
+          // window.location.href = Path + 'Login.html';
+        // }
+    });
+    $scope.numItems = 2;
+    $scope.toggleDisplay = function() {
+    $scope.numItems = $scope.data.length;
+    };
+  });
+  app.controller('customerCtrl', function ($scope, $http, $window) {
+    $http({
+            method: 'GET',
+            url: "https://localhost:44345/api/customer",
+            headers: {
+                'Authorization': localStorage.getItem("TokenKey")
+            }
+          }).then(function (resp) {
+      $scope.data = resp.data;
+    }, function (error) {
+      // if (!flag) {
+          flag = 1;
+          // $window.alert("Access denied");
+          // window.location.href = Path + 'Login.html';
+        // }
     });
     $scope.numItems = 2;
     $scope.toggleDisplay = function() {
       $scope.numItems = $scope.data.length;
     };
   });
-  app.controller('customerCtrl', function ($scope, $http) {
-    $http.get("https://localhost:44345/api/customer").then(function (resp) {
+  app.controller('productCtrl', function ($scope, $http, $window) {
+    $http({
+            method: 'GET',
+            url: "https://localhost:44345/api/product",
+            headers: {
+                'Authorization': localStorage.getItem("TokenKey")
+            }
+          }).then(function (resp) {
       $scope.data = resp.data;
     }, function (error) {
-      console.log(error);
+      // if (!flag) {
+          flag = 1;
+        //   $window.alert("Access denied");
+        //   window.location.href = Path + 'Login.html';
+        // }
     });
-    $scope.numItems = 2;
-    $scope.toggleDisplay = function() {
+    
+      $scope.numItems = 2;
+      $scope.toggleDisplay = function() {
       $scope.numItems = $scope.data.length;
     };
   });
-  app.controller('productCtrl', function ($scope, $http) {
-    $http.get("https://localhost:44345/api/product").then(function (resp) {
-      $scope.data = resp.data;
-    }, function (error) {
-      console.log(error);
-    });
-    $scope.numItems = 2;
-    $scope.toggleDisplay = function() {
-      $scope.numItems = $scope.data.length;
-    };
-  });
+  
+  app.controller('logoutCtrl', function ($scope, $http, $window) {
+            $scope.logout = function () {
+                $http({
+                    method: 'GET',
+                    url: "https://localhost:44345/api/logout",
+                    headers: {
+                        'Authorization': localStorage.getItem("TokenKey")
+                    }
+                }).then(function (response) {
+                    localStorage.clear();
+                    // localStorage.removeItem("TokenKey");
+                    window.location.href = 'D:/.NetLabTask/SwiftSaleEcommerce/Frontend/Login.html';
+                }, function (error) {
+                    $window.alert("Logout failed");
+                });
+            };
+        }); 
   </script>
 </body>
 </html>
